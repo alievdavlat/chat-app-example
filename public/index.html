@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <style>
+    ::-webkit-scrollbar{
+      width: 0;
+    }
+    #message {
+      color: red;
+    }
+    .message-field{
+      width: 400px;
+      height: 400px;
+      overflow-y: scroll;
+      border: 1px solid black;
+      flex-direction: column;
+      padding: 20px;
+      
+    }
+    .wrapper{
+      display: flex;
+      gap: 30px;
+      
+      
+    }
+    .bowqasi{
+      display: flex;
+      align-items:start ;
+      justify-content:start ;
+
+    }
+    .san{
+      display: flex;
+      align-items: end;
+      justify-content:end ;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>chat app</h1>
+
+  <div class="wrapper">
+    
+          
+
+  
+    <div class="container">
+      <h1>chatda odamlar</h1>
+    </div>
+
+   
+    <div class="message-area">
+      <div class="message-field">
+
+      </div>
+      <form id="chatForm">
+      
+        <input type="text" placeholder="message " name="message" id="message" autofocus autocomplete="off">
+        <button>
+          send
+        </button>
+        
+        </form>
+    </div>
+
+  </div>
+ 
+<script src="./app.js"></script>
+</body>
+</html>
